@@ -1,0 +1,7 @@
+JavaScript Improvements:
+
+One of the ways that we eill be using JS to improve our project is by creating scripts to request information from API's that will allow us to populate our movie review site's movie info.
+
+Additionally We will be using JS in order to implement a movie/(possibly actor) search function. 
+
+It will also allow us to populate our individual movie pages with all of the respective reviews for that movie.
