@@ -14,30 +14,13 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
 	<style>
-		#carousel-image{
-			width: 500px;
-			height: 500px;
-
-		}
-		.carousel-caption{
-			color: black;
-		}
-
-		.card-block{
-			padding: 7px;
-			background-color: silver;
-		}
-
-		.carousel-control-next-icon {
-    		background-image : url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' viewBox='0 0 8 8'%3E%3Cpath d='M1.5 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E")
-    		color: black;
-		}
+		
 	</style>
 </head>
 
-<body style="background-color: silver">
-	<nav class="navbar navbar-dark bg-dark">
-		<div class="container-fluid">
+<body>
+	<nav class="navbar navbar-dark" id="bootstrap" >
+		<div class="container-fluid" style="background-color: black">
 			<div class="row">
 				<div class="navbar-header">
 					<div class="navbar-brand"> <a href="homepage.html" style="color:gold; text-decoration:none;">The Movie Rater</a></div>
@@ -112,11 +95,38 @@
 				</script>
 			</div>
 	    </div>
-		<div class="card card-outline-primary mb-3 text-center">
-		  <div class="card-block">
-		  	<h1>MOVIE REVIEWS GO HERE</h1>
-		  </div>
+	    <div class=" card-outline-primary mb-3" style="border-color: gold">
+	    	<div class="card-block">
+				<div class="card card-outline-primary mb-3 text-center">
+				  <div class="card-block" id="review">
+				  	<div class="row">
+				  		<div class="col-lg-2">
+				  			<img class="img-responsive float-center" src="Poster.jpg" id="review-img">
+				  			<p>Reviewer</p>
+				  		</div>
+				  		<div class="col-lg-10 text-left">
+				  			<h3>Review Title</h3>
+				  			<blockquote>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</blockquote>
+				  		</div>
+				  </div>
+				</div>
+			</div>
+			<div class="card card-outline-primary mb-3 text-center">
+				  <div class="card-block" id="review">
+				  	<div class="row">
+				  		<div class="col-lg-2">
+				  			<img class="img-responsive float-center" src="Poster.jpg" id="review-img">
+				  			<p>Reviewer</p>
+				  		</div>
+				  		<div class="col-lg-10 text-left">
+				  			<h3>Review Title</h3>
+				  			<blockquote>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</blockquote>
+				  		</div>
+				  </div>
+				</div>
+			</div>
 		</div>
+	</div>
 
 
 </body>

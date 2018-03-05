@@ -135,3 +135,42 @@ body {
     width: 70%;
     border: 1px solid #428bca;
 }
+
+  #carousel-image{
+      width: 500px;
+      height: 500px;
+
+    }
+    .carousel-caption{
+      color: gold;
+    }
+
+    .card-block{
+      padding: 7px;
+      background-color: black;
+      color: gold;
+    }
+
+    #review {
+      padding: 1px;
+    }
+
+    .carousel-control-next-icon {
+        background-image : url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' viewBox='0 0 8 8'%3E%3Cpath d='M1.5 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E")
+        color: black;
+    }
+
+    .card{
+      border-color: gold;
+      border-width: 2px;
+
+    }
+
+    #bootstrap .nav {
+      background-color: black;
+    }
+
+    #review-img {
+      width: 190px;
+      height: 250px;
+    }
