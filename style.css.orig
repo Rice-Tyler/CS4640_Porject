@@ -1,9 +1,9 @@
 body {
-  background-color: black !important; 
+	background-color: black !important;	
 }
 
-.wrapper {  
-  margin-top: 55px;
+.wrapper {	
+	margin-top: 55px;
   margin-bottom: 80px;
 }
 
@@ -17,7 +17,7 @@ body {
   border: 2px solid gold;
   border-radius: 5px;
 }
-
+<<<<<<< HEAD
 .form-signin-heading,
 .checkbox {
  margin-bottom: 30px;
@@ -61,36 +61,36 @@ input[type="password"]:focus {
   border-color: gold;
 }
 
-
+=======
   .form-signin-heading,
-  .checkbox {
-    margin-bottom: 30px;
-  }
+	.checkbox {
+	  margin-bottom: 30px;
+	}
 
-  .checkbox {
-    font-weight: normal;
+	.checkbox {
+	  font-weight: normal;
       color: white;
-  }
+	}
 
-  .form-control {
-    position: relative;
-    font-size: 16px;
-    height: auto;
-    padding: 10px;
-    @include box-sizing(border-box);
+	.form-control {
+	  position: relative;
+	  font-size: 16px;
+	  height: auto;
+	  padding: 10px;
+		@include box-sizing(border-box);
 
-    &:focus {
-      z-index: 2;
-    }
-  }
+		&:focus {
+		  z-index: 2;
+		}
+	}
 
-  input[type="text"] {
-    margin-bottom: -1px;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+	input[type="text"] {
+	  margin-bottom: -1px;
+	  border-bottom-left-radius: 0;
+	  border-bottom-right-radius: 0;
     background-color: black;
     color: blue;
-  }
+	}
 
   textarea{
     margin-bottom: -1px;
@@ -100,20 +100,21 @@ input[type="password"]:focus {
     color: blue;
   }
 
-  input[type="password"] {
-    margin-bottom: 20px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
+	input[type="password"] {
+	  margin-bottom: 20px;
+	  border-top-left-radius: 0;
+	  border-top-right-radius: 0;
          background-color: black;
-  }
+	}
     
     input[type="text"]:focus {
-     border-color: gold;
-  }
+	   border-color: gold;
+	}
     input[type="password"]:focus {
-     border-color: gold;
-  }
+	   border-color: gold;
+	}
     
+>>>>>>> fd2b57d8973d3ce1f6dbf7b66bccb192e6de29c0
 
 .btn-primary,
 .btn-primary:hover,
@@ -183,7 +184,7 @@ input[type="password"]:focus {
   color: gold;
 }
 
-
+<<<<<<< HEAD
 #review {
   padding: 1px;
 }
@@ -233,7 +234,7 @@ input[type="password"]:focus {
 #incorrectPassword {
   display: none;
 }
-
+=======
 .search-container{
     margin: 0 auto;
     background-color:red;
@@ -284,3 +285,6 @@ input[type="password"]:focus {
     .error {
       color: red;
     }
+
+    
+>>>>>>> fd2b57d8973d3ce1f6dbf7b66bccb192e6de29c0
