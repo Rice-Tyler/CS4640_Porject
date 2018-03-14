@@ -56,16 +56,16 @@
 		?>
 
 		<form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
-			Name: <input type="text" name="name" value=" <?php echo($name);?> ">
+			Name: <input type="text" name="name" placeholder="Name" value=" <?php echo($name);?> ">
 			<span class="error">* <?php echo $nameErr;?></span>
 			<br><br>
-			Title: <input type="text" name="title" value="<?php echo $title;?>">
+			Title: <input type="text" name="title" placeholder="Title" value="<?php echo $title;?>">
 			<span class="error">* <?php echo($titleErr);?> </span>
 			<br><br>
-			Text: <textarea name="text" rows="10" cols="40"><?php echo $text;?></textarea>
+			Text: <textarea name="text" placeholder="Review Text" rows="10" cols="40"><?php echo $text;?></textarea>
 			<span class="error">* <?php echo $textErr;?></span>
 			<br><br>
-			Rating: <input type="text" name="rating" value="<?php echo $rating;?>">
+			Rating: <input type="text" name="rating" placeholder="Rating (0.0-5.0)" value="<?php echo $rating;?>">
 			<span class="error">* <?php echo( $ratingErr);?></span>
 
 			<br><br>
