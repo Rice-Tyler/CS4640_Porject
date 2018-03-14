@@ -33,6 +33,16 @@
 				$ratingErr = "Rating is required";
 			} else {
 				$rating = parse($_POST["rating"]);
+				if (!preg_match("/[\d]*[.][\d]*/", $rating)) {
+					$ratingErr = "Must be a number with a decimal";
+					$rating = "";
+				}
+
+				$rating = floatval($rating);
+				if ($rating < 0 | $rating > 5) {
+					$ratingErr = "Must be Between 0.0 and 5.0";
+					$rating = "";
+				}
 			}
 		}
 
