@@ -26,11 +26,12 @@
 <div class="search-container" > 
 </div>
 <script>
+    //displays the search term
     document.addEventListener('DOMContentLoaded', function() {
-        var search = window.location.search.split("=");
-        var final = search[1].split("+");
+        var search = window.location.search.split("="); //splits at '='
+        var final = search[1].split("+"); //parses string
         var string = "";
-        for(i=0; i < final.length; i++) {
+        for(i=0; i < final.length; i++) { //adds all the words together
             string+=final[i] + " "
         }
         console.log(string);

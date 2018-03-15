@@ -1,9 +1,9 @@
 body {
-	background-color: black !important;	
+  background-color: black !important; 
 }
 
-.wrapper {	
-	margin-top: 55px;
+.wrapper {  
+  margin-top: 55px;
   margin-bottom: 80px;
 }
 
@@ -17,15 +17,60 @@ body {
   border: 2px solid gold;
   border-radius: 5px;
 }
-  .form-signin-heading,
-	.checkbox {
-	  margin-bottom: 30px;
-	}
 
-	.checkbox {
-	  font-weight: normal;
+.form-signin-heading,
+.checkbox {
+ margin-bottom: 30px;
+}
+
+.checkbox {
+ font-weight: normal;
+ color: white;
+}
+
+.form-control {
+ position: relative;
+ font-size: 16px;
+ height: auto;
+ padding: 10px;
+ @include box-sizing(border-box);
+
+ &:focus {
+  z-index: 2;
+}
+}
+
+input[type="text"] {
+ margin-bottom: -1px;
+ border-bottom-left-radius: 0;
+ border-bottom-right-radius: 0;
+ background-color: black;
+}
+
+input[type="password"] {
+ margin-bottom: 20px;
+ border-top-left-radius: 0;
+ border-top-right-radius: 0;
+ background-color: black;
+}
+
+input[type="text"]:focus {
+  border-color: gold;
+}
+input[type="password"]:focus {
+  border-color: gold;
+}
+
+
+  .form-signin-heading,
+  .checkbox {
+    margin-bottom: 30px;
+  }
+
+  .checkbox {
+    font-weight: normal;
       color: white;
-	}
+      	}
 
 	.form-control {
 	  position: relative;
@@ -46,6 +91,29 @@ body {
     background-color: black;
     color: white;
 	}
+=======
+  }
+
+  .form-control {
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    @include box-sizing(border-box);
+
+    &:focus {
+      z-index: 2;
+    }
+  }
+
+  input[type="text"] {
+    margin-bottom: -1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: black;
+    color: blue;
+  }
+
 
   input[type="text"] #id {
     border-radius: 4px;
@@ -62,19 +130,19 @@ body {
     color: gold;
   }
 
-	input[type="password"] {
-	  margin-bottom: 20px;
-	  border-top-left-radius: 0;
-	  border-top-right-radius: 0;
+  input[type="password"] {
+    margin-bottom: 20px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
          background-color: black;
-	}
+  }
     
     input[type="text"]:focus {
-	   border-color: gold;
-	}
+     border-color: gold;
+  }
     input[type="password"]:focus {
-	   border-color: gold;
-	}
+     border-color: gold;
+  }
     
 
 .btn-primary,
@@ -82,66 +150,118 @@ body {
 .btn-primary:active,
 .btn-primary:visited,
 .btn-primary:focus  {
-        background-color: black;
-        border: 2px solid gold;
-    }
+  background-color: black;
+  border: 2px solid gold;
+}
 .btn-primary:hover{
-        background-color: black;
-        border: 2px solid gold;
-        opacity: 0.75;
-    }
-
-#para1 {
-    text-align: center;
-    color: red;
-    display: none;
+  background-color: black;
+  border: 2px solid gold;
+  opacity: 0.75;
 }
 
 .login-navbar-brand{
-    padding: 25px 50px;
-    color: gold;
-    font-size: 25px;
+  padding: 25px 50px;
+  color: gold;
+  font-size: 25px;
 }
 
 .navbar-brand{
-    padding: 25px 50px;
-    color: gold;
+  padding: 25px 50px;
+  color: gold;
 }
 .navbar-nav {
-    margin:11px;
-}
-
-#createAccount {
-    text-decoration: underline;
-    margin: 0 auto;
-    display: table;
-    padding-bottom: 3px;
-    align-self: center;
-}
-
-#incorrectEmail {
-    display: none;
-}
-
-#incorrectPassword {
-    display: none;
+  margin:11px;
 }
 
 .navbar-nav>li>a:hover {
-    background-color:black;
+  background-color:black;
 }
 
 .input-group stylish-input-group {
-    margin-top: 100px;
+  margin-top: 100px;
 }
 
 .stylish-input-group button{
-    border:0;
-    background:transparent;
+  border:0;
+  background:transparent;
 }
 
 .stylish-input-group .input-group-addon{
-    background: black !important; 
+  background: black !important; 
+}
+
+.search-container{
+  margin: 0 auto;
+  background-color:red;
+  height: 90%;
+  width: 70%;
+  border: 1px solid #428bca;
+}
+
+#carousel-image{
+  width: 500px;
+  height: 500px;
+
+}
+.carousel-caption{
+  color: gold;
+}
+
+.card-block{
+  padding: 7px;
+  background-color: black;
+  color: gold;
+}
+
+
+#review {
+  padding: 1px;
+}
+
+.carousel-control-next-icon {
+  background-image : url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' viewBox='0 0 8 8'%3E%3Cpath d='M1.5 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E")
+  color: black;
+}
+
+.card{
+  border-color: gold;
+  border-width: 2px;
+
+}
+
+#bootstrap .nav {
+  background-color: black;
+}
+
+#review-img {
+  width: 190px;
+  height: 250px;
+}
+
+#para1 {
+  display: none;
+}
+#emailReq {
+  display: none;
+}
+#passwordReq {
+  display: none;
+}
+
+#createAccount {
+  text-decoration: underline;
+  margin: 0 auto;
+  display: table;
+  padding-bottom: 3px;
+  align-self: center;
+}
+
+#incorrectEmail {
+  display: none;
+}
+
+#incorrectPassword {
+  display: none;
 }
 
 .search-container{
@@ -195,6 +315,7 @@ body {
       color: red;
     }
 
+
     #review-form input[type="text"] {
       color: lightgray;
       border-width: 2px;
@@ -203,3 +324,4 @@ body {
       background-color: black;
 
     }
+

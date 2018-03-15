@@ -12,10 +12,10 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="navbar-header">
-					<div class="navbar-brand"> <a href="homepage.html" style="color:gold; text-decoration:none;">The Movie Rater</a></div>
+					<div class="navbar-brand"> <a href="homepage.php" style="color:gold; text-decoration:none;">The Movie Rater</a></div>
 				</div>
 				<ul class="nav navbar-nav">
-					<li><a href="homepage.html">Home</a></li>
+					<li><a href="homepage.php">Home</a></li>
 					<li><a href="Template.html">Search</a></li>
 				</ul>
 			</div>
