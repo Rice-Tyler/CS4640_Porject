@@ -1,7 +1,7 @@
 <?php
 $emailErr = $passwordErr = "";
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-	if (empty($_POST["email"])) { //uses implicit object $_POST
+if ($_SERVER['REQUEST_METHOD'] == 'POST') { 
+	if (empty($_POST["email"])) { //uses implicit object $_POST and control structures
 		$emailErr = "*Email is required <br/>";
 	} else if(!strpos($_POST["email"], '@')) { //uses built-in strpos function to check if valid email address..
 		$emailErr = "*Invalid email address <br/>";
@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 
   //performs input sanitization to make sure the user input is clean
-function sanitize($data) {
+function sanitize($data) { //user-defined function
 	$data = trim($data);
 	$data = stripslashes($data);
 	$data = htmlspecialchars($data);
