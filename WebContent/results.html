@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Results</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body style="background-color:#428bca;">
+    <nav class="navbar navbar-dark bg-dark">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="navbar-header">
+					<div class="navbar-brand"> <a href="homepage.html" style="color:gold; text-decoration:none;">The Movie Rater</a></div>
+				</div>
+				<ul class="nav navbar-nav">
+					<li><a href="homepage.html">Home</a></li>
+					<li><a href="Template.html">Search</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+<h3 id="searchHeader" style="color:#428bca; text-align: center; margin-top: 50px; font-family:sans-serif;">Results for: </h3>
+<div class="search-container" > 
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var search = window.location.search.split("=");
+        var final = search[1].split("+");
+        var string = "";
+        for(i=0; i < final.length; i++) {
+            string+=final[i] + " "
+        }
+        console.log(string);
+        console.log(final);
+        var text = document.createTextNode(string);
+        document.getElementById("searchHeader").appendChild(text);
+    });     
+</script>
+
+</body>
+</html>

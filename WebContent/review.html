@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<form action="form.php" method="post">
+		What is the main difference between JS and PHP?
+		<br/>
+		<textarea rows="5" cols="20" name="ans1" > 
+		</textarea>
+		<input type="submit" value="submit answer" name="btn" />
+	</form>
+
+	<?php  
+		$answer1 = null;
+
+			if ($_SERVER['REQUEST_METHOD'] == "POST"){
+				if (empty($_POST['ans1'])){
+					echo"Please answer <br/>";
+				}
+				else{
+					$answer1 = $_POST['ans1'];
+					echo $answer1 . "<br/><br/>";
+				}
+			}
+		?>
+
+
+
+</body>
+</html>
+
